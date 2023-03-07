@@ -1,0 +1,33 @@
+.logo-section {
+  position: relative;
+  display: flex;
+  padding: 3rem 0 5rem 10rem;
+  align-items: center;
+
+  .logo {
+    width: 7rem;
+    width: 7rem;
+  }
+
+  .logo_text {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    position: relative;
+    padding: 0 0 14px 20px;
+    span {
+      color: $primary;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 1px;
+      bottom: 0px;
+      left: 22px;
+      background-color: rgba($white, 0.8);
+    }
+  }
+}
