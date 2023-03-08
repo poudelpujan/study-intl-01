@@ -7,10 +7,18 @@ export default defineConfig({
   // base:"/study-intl/"
   build: {
     rollupOptions: {
-      input: "src/index.html",
+      input: "src/main.jsx",
     },
   },
   optimizeDeps: {
-    include: ["axios", "lodash", "react", "react-dom", "react-router-dom"],
+    include: [
+      "axios",
+      "lodash",
+      "react",
+      "react-dom",
+      "react-router-dom",
+      "sass",
+      "react-icons",
+    ],
   },
 });
