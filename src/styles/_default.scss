@@ -1,0 +1,93 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Element selector */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Class selector */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* ID selector */
+#header {
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#logo {
+  width: 100px;
+  height: auto;
+}
+
+/* Attribute selector */
+a[target="_blank"] {
+  text-decoration: none;
+  color: #007bff;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Pseudo-class selector */
+a:hover {
+  text-decoration: underline;
+}
+
+button:active {
+  background-color: #0069d9;
+}
+
+/* Pseudo-element selector */
+p::first-letter {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+}
