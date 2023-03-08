@@ -8,8 +8,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite gh-pages -d dist",
-    "bd": "vite build && vite deploy"
+    "add-domain": "echo \"www.istudyintl.com\" > build/CNAME",
+    "deploy": "add-domain gh-pages -d dist",
+    "bd": "yarn build && yarn deploy"
   },
   "dependencies": {
     "react": "^18.2.0",
