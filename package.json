@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "vite add-domain gh-pages -d dist",
+    "deploy": "vite gh-pages -d dist",
     "bd": "vite build && vite deploy"
   },
   "dependencies": {
