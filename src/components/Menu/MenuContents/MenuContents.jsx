@@ -30,6 +30,22 @@ function MenuContents() {
     }
   };
 
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setActiveDropdown(false);
+    } else {
+      setActiveDropdown(true);
+    }
+  };
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setActiveDropdown(false);
+    } else {
+      setActiveDropdown(false);
+    }
+  };
+
   return (
     <div className="menu-holder">
       <div className="logo-section">
