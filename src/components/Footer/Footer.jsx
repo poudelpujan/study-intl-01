@@ -63,7 +63,7 @@ const Footer = ({ title }) => {
           <div className="pull-left">
             <span>
               &#169;IStudy International Education Consultancy. All rights
-              reserved. By &nbsp;
+              reserved.
               {/* <Link to="/" target="/" _blank="">
                 Pujan Poudel
               </Link> */}
