@@ -1,0 +1,322 @@
+// about us section
+.is__aboutColumn {
+  background: $background-color;
+  padding: 1em;
+
+  &-wrapper {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: first;
+    text-align: start;
+    padding: 3em 0em 2em 0em;
+
+    &-content {
+      text-align: start;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+
+      &-title {
+        margin-bottom: 20px;
+        position: relative;
+
+        h1 {
+          font-size: $h1-sm;
+          font-weight: 700;
+          line-height: 1.2;
+          color: $secondary;
+          margin: 0;
+          &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -0.5rem;
+            width: 50px;
+            height: 3px;
+            background-color: $secondary;
+          }
+
+          @include mq("tablet") {
+            font-size: $h1-md;
+          }
+          @include mq("tablet-wide") {
+            font-size: $h1-md;
+          }
+          @include mq("desktop") {
+            font-size: $h1-lg;
+          }
+          @include mq("desktop-wide") {
+            font-size: $h1-lg;
+          }
+          @include mq("desktop-large") {
+            font-size: $h1;
+          }
+        }
+      }
+
+      &-desc {
+        margin-bottom: 30px;
+        font-size: 18px;
+        line-height: 1.5;
+        color: $dark;
+
+        @include mq("tablet") {
+          // font-size: 24px;
+          font-size: $p-md;
+        }
+        @include mq("tablet-wide") {
+          // font-size: 24px;
+          font-size: $p-md;
+        }
+        @include mq("desktop") {
+          // font-size: 24px;
+          font-size: $p-md;
+        }
+        @include mq("desktop-wide") {
+          // font-size: 24px;
+          font-size: $p-md;
+        }
+        @include mq("desktop-large") {
+          // font-size: 24px;
+          font-size: $p-lg;
+        }
+      }
+
+      &-btn {
+        @include mq("tablet") {
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+// our courses section
+// .is__courses {
+//   position: relative;
+//   padding: 0 !important;
+
+//   background-color: #dddddd;
+
+//   &-wrapper {
+//     display: flex;
+//     justify-content: center;
+//     // background: mediumslateblue;
+//     align-items: center;
+
+//     &-content {
+//       width: 100%;
+//       padding: 30px 0;
+
+//       &-title {
+//         font-size: 2rem;
+//         position: relative;
+//         display: inline-block;
+//         margin-bottom: 2rem;
+//         padding: 0em 0.625em;
+
+//         h1 {
+//           font-size: 32px;
+//           font-weight: 700;
+//           position: relative;
+//           color: $secondary !important;
+//           &:after {
+//             content: "";
+//             position: absolute;
+//             left: 0;
+//             bottom: -0.5rem;
+//             width: 30%;
+//             height: 3px;
+//             background-color: #333;
+//           }
+//         }
+//       }
+
+//       .wrapper-content-cards {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: center;
+//       }
+//     }
+//   }
+// }
+
+// .is__courses {
+//   position: relative;
+//   background-color: $white;
+//   // width: 100%;
+//   &-wrapper {
+//     width: 100%;
+//     padding: 3em 0;
+//     background: $secondary;
+
+//     &-title {
+//       font-size: 2rem;
+//       position: relative;
+//       display: inline-block;
+//       margin-bottom: 2rem;
+//       padding: 0em 0.625em;
+
+//       h1 {
+//         font-size: 32px;
+//         font-weight: 700;
+//         position: relative;
+//         color: $white !important;
+//         &:after {
+//           content: "";
+//           position: absolute;
+//           left: 0;
+//           bottom: -0.5rem;
+//           width: 30%;
+//           height: 3px;
+//           background-color: $white;
+//         }
+//       }
+//     }
+//     &-content {
+//       padding: 2em 3em;
+//       display: flex;
+//       flex-direction: column;
+//       gap: 2em;
+
+//       @include mq(tablet) {
+//         flex-direction: row;
+//         background: red;
+//       }
+//     }
+//   }
+// }
+
+.is__courses {
+  background: $white;
+  position: relative;
+
+  &-wrapper {
+    padding: 1em 0.625em;
+    width: 100%;
+    height: 100%;
+
+    &-title {
+      height: 5em;
+      padding: 1em 0.625em;
+
+      h1 {
+        position: relative;
+        font-size: $h1-lg;
+        font-weight: 700;
+        color: $secondary;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 50px;
+          height: 3px;
+          background: $secondary;
+        }
+      }
+      @include mq(tablet) {
+        padding: 1em 1.625em;
+      }
+    }
+    &-content {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      padding: 1em 0.625em;
+      @include mq(tablet) {
+        padding: 1em;
+      }
+      @include mq(tablet-wide) {
+        padding: 1em;
+      }
+      // @include mq(desktop) {
+      //   padding: 2em 4em;
+      // }
+      // @include mq(tablet-wide) {
+      //   padding: 2em 4em;
+      // }
+      // @include mq(desktop-large) {
+      //   padding: 3em 5em;
+      // }
+    }
+  }
+}
+
+// study abroad starts
+.is__studyAbroad {
+  position: relative;
+  background-color: $background-color;
+  width: 100%;
+
+  &-wrapper {
+    width: 100%;
+    padding: 80px 0;
+
+    &-title {
+      display: inline-block;
+      margin-bottom: 2rem;
+      align-items: center;
+      display: flex;
+      gap: 6px;
+      position: relative;
+      font-size: $h1-lg;
+      font-weight: 700;
+      color: $secondary;
+
+      &:after {
+        content: "";
+        position: absolute;
+
+        bottom: 0;
+        width: 50px;
+        height: 3px;
+        background-color: #333;
+      }
+      @include mq(tablet) {
+        padding: 1em 1em;
+        position: relative;
+      }
+    }
+    &-content {
+      margin-top: 15px;
+      padding-top: 5px;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+      @include mq("tablet-small") {
+        width: calc(50% - 20px);
+        margin-right: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: rows;
+        flex-wrap: wrap;
+      }
+
+      /* Medium devices (tablets, 768px and up) */
+      @include mq(tablet) {
+        width: calc(33.33% - 20px);
+        margin-right: 20px;
+        margin-bottom: 20px;
+        flex-direction: rows;
+        // grid-gap: 1em;
+      }
+
+      /* Large devices (desktops, 992px and up) */
+      @include mq(desktop) {
+        width: calc(25% - 20px);
+        margin-right: 20px;
+        margin-bottom: 20px;
+        flex-direction: row;
+
+        .is__studyAbroadCards-content-items {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
