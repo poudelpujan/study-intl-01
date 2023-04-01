@@ -141,16 +141,16 @@
       text-transform: uppercase;
 
       @include mq("tablet") {
-        font-size: $h4-md;
+        font-size: $h2-md;
       }
       @include mq("tablet-wide") {
-        font-size: $h4-md;
+        font-size: $h2-md;
       }
       @include mq("desktop") {
         font-size: $h4-lg;
       }
       @include mq("desktop-wide") {
-        font-size: $h4-lg;
+        font-size: $h2-lg;
       }
       @include mq("desktop-large") {
         font-size: $h4;
