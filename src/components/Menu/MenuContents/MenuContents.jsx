@@ -59,7 +59,7 @@ function MenuContents() {
 
         <Link className="logo_text" to="/">
           <h4>
-            <span>ISTUDY INTERNATIONAL</span> EDUCATION CONSULTANCY
+            <span>ISTUDY INTERNATIONAL</span> EDUCATIONAL CONSULTANCY
           </h4>
         </Link>
       </div>

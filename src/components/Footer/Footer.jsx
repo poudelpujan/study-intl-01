@@ -15,7 +15,7 @@ const Footer = ({ title }) => {
               <h5 className="widget-title">{title}</h5>
               <div className="text-widget">
                 <p>
-                  IStudy International Education Consultancy that provides
+                  IStudy International Educational Consultancy that provides
                   students with test preparation and advising services for
                   studying in countries such as the USA, Australia, Canada,
                   Japan, New Zealand, and the UK with an aim to provide
@@ -40,7 +40,7 @@ const Footer = ({ title }) => {
                 </li>
                 <li>
                   <Link to="/">Study Abroad</Link>
-                </li>  
+                </li>
                 <li>
                   <Link to="/">Our Courses</Link>
                 </li>

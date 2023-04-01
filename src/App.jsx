@@ -13,7 +13,7 @@ function App() {
       <div className="is__app__contents">
         <AppRoutes />
       </div>
-      <Footer title="IStudy International Education Consultancy" />
+      <Footer title="IStudy International Educational Consultancy" />
     </div>
   );
 }
