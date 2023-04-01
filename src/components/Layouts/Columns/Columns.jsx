@@ -48,7 +48,9 @@ export const ColumnStudyAbroad = ({ title }) => {
   return (
     <section className=" is__studyAbroad">
       <div className="is__studyAbroad-wrapper container">
-        <div className="is__studyAbroad-wrapper-title">{title}</div>
+        <div className="is__studyAbroad-wrapper-title">
+          <h1>{title}</h1>
+        </div>
         <div className="is__StudyAbroad-wrapper-content">
           <StudyAbroadCards />
         </div>

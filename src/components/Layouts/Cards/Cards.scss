@@ -84,7 +84,7 @@
       width: 16em;
     }
     @include mq(tablet-wide) {
-      width: 15em;
+      width: 14em;
     }
     @include mq(desktop) {
       width: 18em;
@@ -134,7 +134,7 @@
       margin: 12px 0 4px 0;
       font-family: inherit;
       font-weight: 600;
-      font-size: $h4-sm;
+      font-size: $h3-lg;
       line-height: 2;
       color: $secondary;
       top: 0;
@@ -161,7 +161,9 @@
       z-index: 2;
       position: relative;
       margin: 0;
-      font-size: $p-sm;
+      // font-size: $p-sm;
+      font-size: $h4-lg;
+
       line-height: 1.7;
       color: $secondary;
 

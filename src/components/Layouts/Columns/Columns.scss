@@ -38,10 +38,10 @@
           }
 
           @include mq("tablet") {
-            font-size: $h1-md;
+            font-size: $h1-lg;
           }
           @include mq("tablet-wide") {
-            font-size: $h1-md;
+            font-size: $h1-lg;
           }
           @include mq("desktop") {
             font-size: $h1-lg;
@@ -250,35 +250,34 @@
 .is__studyAbroad {
   position: relative;
   background-color: $background-color;
-  width: 100%;
 
   &-wrapper {
+    padding: 1em 0.625em;
     width: 100%;
-    padding: 80px 0;
+    height: 100%;
 
     &-title {
-      display: inline-block;
-      margin-bottom: 2rem;
-      align-items: center;
-      display: flex;
-      gap: 6px;
-      position: relative;
-      font-size: $h1-lg;
-      font-weight: 700;
-      color: $secondary;
+      height: 5em;
+      padding: 1em 0.625em;
 
-      &:after {
-        content: "";
-        position: absolute;
+      h1 {
+        position: relative;
+        font-size: $h1-lg;
+        font-weight: 700;
+        color: $secondary;
 
-        bottom: 0;
-        width: 50px;
-        height: 3px;
-        background-color: #333;
+        &::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 50px;
+          height: 3px;
+          background: $secondary;
+        }
       }
       @include mq(tablet) {
-        padding: 1em 1em;
-        position: relative;
+        padding: 1em 1.625em;
       }
     }
     &-content {
