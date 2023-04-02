@@ -23,47 +23,108 @@ const CountryKorea = () => {
       <div className="container">
         <div className="row single-page-content">
           <p>
-            Australia is famous for offering a great environment and high living
-            standards. At the forefront of technological advancements and
-            innovations, Australia offers student the top-class advantage of
-            impressive resources. Along with that, Australia also has large
-            number of impeccable institutions for Management, Commerce and
-            Accounting, Arts and Humanities, Medical related, Engineering and
-            Technology, Life Sciences, Social Sciences, Physical Sciences, and
-            other courses with Scholarships on offer, makes Australia rather
-            popular amongst students. With numerous top universities in the
-            world located in Australia, the popularity of Australia as a top
-            study destination has been increasing day by day.
+            Studying and residing in South Korea can provide students with an
+            opportunity to explore a vibrant and beautiful country. Whether it
+            is discovering the bustling city of Seoul or exploring the country's
+            stunning coastlines and rural areas, studying in South Korea offers
+            a diverse range of fascinating sights and breathtaking views.
+            Moreover, students can experience South Korea's rich and dynamic
+            culture during their stay.
           </p>
-
+          <br />
           <p>
-            There is a total of 43 accredited universities in Australia
-            comprising 40 Australian universities, 2 international universities
-            and a smaller private specialty university. Higher education courses
-            and qualifications are also offered by many non-university providers
-            in the higher education sector. Likewise, there are 4279 vocational
-            education and training providers.
+            South Korea, also called the Republic of Korea, is located in East
+            Asia on the southern part of the Korean Peninsula. It shares land
+            borders with North Korea and sea borders with Japan and China. The
+            country's terrain is mainly mountainous, with some coastal plains,
+            rolling hills, river basins, and valleys. Its climate is humid
+            continental and subtropical, characterized by four distinct
+            seasons..
           </p>
-
-          {/* <figure class="wp-block-image"><img src="https://capitalstudynepal.com/wp-content/uploads/2018/10/unnamed-2.jpg" alt="" class="wp-image-4830"></figure> */}
-
+          <br />
+          <h3>Language in South Korea</h3>
           <p>
-            Australia has helped science and research through incredible
-            discoveries, excellent education programs and global collaborations.
-            Australian Cities like Sydney, Melbourne and Adelaide are ranked as
-            the overall best cities to live. They are safe, modern and friendly
-            territory. With multiculturalism in their essence, it is difficult
-            not to love this harmonious society.
+            South Korea's official language is Korean, which is spoken
+            throughout the country due to the homogenous ethnic makeup of its
+            population (excluding a small Chinese population). Although there
+            are several dialects of the Korean language, they are similar enough
+            that the majority of Koreans can comprehend them.
           </p>
-
+          <br />
+          <h3>Cost of Living in South Korea</h3>
           <p>
-            And with this increase in popularity, one needs the assistance of
-            expert and knowledgeable Australian educational consultants to help
-            navigate through the admission and visa application process. With
-            our Own Head Office based in Sydney with immensely capable Team
-            being lead by our Founder / Director Mr Kirtu KC, one of the best
-            professional Registered Migration Agent, is ever ready to assist you
-            in your coming days in Australia.
+            The currency used in South Korea is the "won", and 1,061 won was
+            equivalent to 1 U.S. dollar.
+          </p>
+          <br />
+          <p>
+            One can rent an apartment and participate in sports and recreational
+            activities for a similar cost in South Korea as in many parts of the
+            United States, depending on the location. However, grocery,
+            clothing, private transportation, and apartment purchase prices are
+            generally higher in South Korea compared to the U.S. On the other
+            hand, public transportation, utilities, and restaurants are
+            typically less expensive in South Korea than in the U.S. Overall,
+            the cost of living in South Korea is slightly higher than in the
+            United States, but salaries are slightly lower..
+          </p>
+          <br />
+          <p>
+            South Korea boasts a sophisticated transportation network that
+            includes highways, bus routes, ships, and high-speed railroads. Air
+            travel is also a popular means of transportation. It is worth noting
+            that public transportation in South Korea is typically less
+            expensive than in the U.S. However, owning a car and purchasing gas
+            is more costly in South Korea than it is in the United States.
+          </p>
+          <br />
+          <h3>South Korean Culture</h3>
+          <p>
+            Korean culture is heavily influenced by Confucianism and emphasizes
+            the importance of family and community values within a hierarchical
+            structure. The hierarchy is based on relationships among individuals
+            and emphasizes the social importance and relevance of familial and
+            communal ties.
+          </p>
+          <br />
+          <p>
+            In South Korea, maintaining harmony and positive relationships
+            within families and between individuals is highly valued, and many
+            Koreans focus on cultivating and preserving personal and familial
+            "kibun". Kibun is a concept that cannot be directly translated into
+            English, but generally encompasses feelings, emotions, pride, and
+            reputation. South Koreans place great importance on maintaining
+            social and cultural status, as well as personal and shared harmony,
+            by paying diligent attention to and showing respect for kibun. This
+            is particularly evident in many South Koreans' emphasis on
+            establishing and maintaining harmony, a sense of peace, calm, and
+            comfort in any situation, regardless of the circumstances.
+          </p>
+          <br />
+          <h3>Food When you Study in South Korea</h3>
+          <p>
+            Staple foods in South Korea mainly consist of rice, vegetables,
+            legumes such as soy and mung beans, and meats. Popular spices and
+            flavors include sesame, ginger, garlic, spicy dried peppers, and
+            fermented sauces, foods, and pastes. Local specialties and dishes
+            are created by combining these foods and flavors. Typical dishes
+            include soups, noodle dishes, stir-fried dishes, and raw dishes such
+            as Miyeok guk, Baek Kimchi, Japchae, and Tangypyeongchae. During a
+            meal, multiple dishes are usually served so that people can enjoy a
+            variety of foods and flavors. Non-alcoholic drinks such as teas,
+            sweet rice drinks, fruit punches, fermented grain juices, and herbal
+            drinks, called eumcheongnyu, are usually served with meals. In
+            addition to these, South Koreans also enjoy alcoholic beverages such
+            as beers, rice wines, and Soju.
+          </p>
+          <br />
+          <p>
+            Much of South Korea's film and music culture is distinctive to the
+            country. The nation is well-known for its locally-produced
+            television dramas and mini-series, as well as having a
+            widely-popular and well-developed film industry mainly consisting of
+            domestically-made films. Popular music genres in South Korea include
+            "K-Pop" and "run", both of which feature unique and vibrant sounds.
           </p>
         </div>
       </div>

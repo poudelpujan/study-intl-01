@@ -1,4 +1,5 @@
 import React from "react";
+import { MessageColumn } from "../../components/Layouts/Columns/Columns";
 
 export const About = ({ title }) => {
   return (
@@ -40,6 +41,7 @@ export const About = ({ title }) => {
               </p>
             </div>
           </div>
+          <MessageColumn />
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
-import React from "react";
-import { Route, Routes, Navigate } from "react-router-dom";
+import React, { useEffect, Suspense } from "react";
+import { Route, Routes, Navigate, useLocation } from "react-router-dom";
 
 import Home from "../pages/Home/Home";
 import { About } from "../pages/About/About";
@@ -19,10 +19,23 @@ import CoursesToefl from "../pages/Courses/CoursesToefl/CoursesToefl";
 import CoursesSat from "../pages/Courses/CoursesSat/CoursesSat";
 import CoursesPte from "../pages/Courses/CoursesPte/CoursesPte";
 import CoursesIelts from "../pages/Courses/CoursesIelts/CoursesIelts";
+import { ScrollToTop } from "./ScrollToTop";
 
 const AppRoutes = () => {
+  const location = useLocation();
+  useEffect(() => {
+    const segments = document.title.split(" | ");
+    segments[segments.length - 1] = segments[segments.length - 1].replace(
+      /\/$/,
+      ""
+    );
+    document.title = segments.join(" | ");
+  }, [location]);
+
   return (
     <div>
+      <ScrollToTop />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us/" element={<About title="About Us" />} />
@@ -30,19 +43,34 @@ const AppRoutes = () => {
         <Route path="/gallery/" element={<Gallery title="Gallery" />} />
 
         {/* study in abroad routes */}
-        <Route path="/study-in/countries/canada/" element={<CountryCanada />} />
+        <Route
+          path="/study-in/countries/canada/"
+          element={<CountryCanada title="Study in Canada" />}
+        />
         <Route
           path="/study-in/countries/australia/"
-          element={<CountryAustralia />}
+          element={<CountryAustralia title="Study in Australia" />}
         />
-        <Route path="/study-in/countries/usa/" element={<CountryUsa />} />
-        <Route path="/study-in/countries/uk/" element={<CountryUk />} />
+        <Route
+          path="/study-in/countries/usa/"
+          element={<CountryUsa title="Study in USA" />}
+        />
+        <Route
+          path="/study-in/countries/uk/"
+          element={<CountryUk title="Study in UK" />}
+        />
         <Route
           path="/study-in/countries/new-zealand/"
-          element={<CountryNewZealand />}
+          element={<CountryNewZealand title="Study in New Zealand" />}
         />
-        <Route path="/study-in/countries/japan/" element={<CountryJapan />} />
-        <Route path="/study-in/countries/korea/" element={<CountryKorea />} />
+        <Route
+          path="/study-in/countries/japan/"
+          element={<CountryJapan title="Study in Japan" />}
+        />
+        <Route
+          path="/study-in/countries/korea/"
+          element={<CountryKorea title="Study in Korea" />}
+        />
 
         {/* course routes */}
         <Route
@@ -57,10 +85,13 @@ const AppRoutes = () => {
           element={<CoursesToefl title="TOEFL" />}
         />
 
-        <Route path="/contact-us/" element={<ContactUs />} />
+        <Route path="/contact-us/" element={<ContactUs title="Contact Us" />} />
 
-        <Route path="/404" element={<PageNotFound />} />
-        <Route path="*" element={<Navigate replace to="/404" />} />
+        <Route path="/404" element={<PageNotFound />} title="Page Not Found" />
+        <Route
+          path="*"
+          element={<Navigate replace to="/404" title="Page Not Found" />}
+        />
       </Routes>
     </div>
   );

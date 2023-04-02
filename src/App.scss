@@ -113,6 +113,26 @@ h2 {
   }
 }
 
+progress {
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  border: none;
+  background: transparent;
+
+  &::-webkit-progress-bar {
+    background: $background-color;
+  }
+  &::-webkit-progress-value {
+    background: $secondary;
+  }
+}
+
 .App {
   height: 100%;
   background: $background-color;
@@ -135,4 +155,35 @@ h2 {
 .is__app__contents {
   position: relative;
   // padding: 8em 0em 0em 0em;
+}
+
+// loader
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black background */
+  z-index: 9999; /* make sure loader is on top of everything else */
+
+  &::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 5px solid #fff; /* white border */
+    border-top-color: #000; /* black top border to create spinning effect */
+    animation: spin 1s linear infinite; /* spinning animation */
+  }
+
+  @keyframes spin {
+    to {
+      transform: rotate(360deg); /* full rotation */
+    }
+  }
 }
