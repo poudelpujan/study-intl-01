@@ -6,7 +6,7 @@ import { About } from "../pages/About/About";
 import Process from "../pages/Process/Process";
 import Gallery from "../pages/Gallery/Gallery";
 import ContactUs from "../pages/Contacts/ContactUs";
-
+import PageNotFound from "../pages/PageNotFound/PageNotFound";
 import CountryUsa from "../pages/Countries/CountryUsa/CountryUsa";
 import CountryCanada from "../pages/Countries/CountryCanada/CountryCanada";
 import CountryAustralia from "../pages/Countries/CountryAustralia/CountryAustralia";
@@ -86,6 +86,12 @@ const AppRoutes = () => {
         />
 
         <Route path="/contact-us/" element={<ContactUs title="Contact Us" />} />
+
+        <Route path="/404" element={<PageNotFound />} title="Page Not Found" />
+        <Route
+          path="*"
+          element={<Navigate replace to="/404" title="Page Not Found" />}
+        />
       </Routes>
     </div>
   );
