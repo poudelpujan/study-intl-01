@@ -37,7 +37,7 @@ const AppRoutes = () => {
       <ScrollToTop />
 
       <Routes>
-        <Route exact path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about-us/" element={<About title="About Us" />} />
         <Route path="/process/" element={<Process title="Process" />} />
         <Route path="/gallery/" element={<Gallery title="Gallery" />} />
