@@ -9,9 +9,9 @@ import MenuManager from "./components/Menu/MenuManager/MenuManager";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <MenuManager>
-      <BrowserRouter basename="///www.istudyintl.com">
+      <HashRouter>
         <App />
-      </BrowserRouter>
+      </HashRouter>
     </MenuManager>
   </React.StrictMode>
 );
