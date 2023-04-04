@@ -2,12 +2,42 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>404 - Not Found</title>
+    <title>Single Page Apps for GitHub Pages</title>
+    <script type="text/javascript">
+      var pathSegmentsToKeep = 0;
+
+      var l = window.location;
+      l.replace(
+        l.protocol +
+          "//" +
+          l.hostname +
+          (l.port ? ":" + l.port : "") +
+          l.pathname
+            .split("/")
+            .slice(0, 1 + pathSegmentsToKeep)
+            .join("/") +
+          "/?/" +
+          l.pathname
+            .slice(1)
+            .split("/")
+            .slice(pathSegmentsToKeep)
+            .join("/")
+            .replace(/&/g, "~and~") +
+          (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
+          l.hash
+      );
+    </script>
   </head>
   <body>
-    <script>
-      // Redirect to the client-side 404 page
-      window.location.replace("/404");
-    </script>
+    <div className="container">
+      <img src={PageNotFoundImage} alt="" style={{ width: "70vw", height:
+      "50vh", display: "flex", justifyContent: "center", padding: " 0 4em", }}
+      />
+
+      <h2>
+        Sorry! The Page you're looking <br />
+        for doesn't exist
+      </h2>
+    </div>
   </body>
 </html>
