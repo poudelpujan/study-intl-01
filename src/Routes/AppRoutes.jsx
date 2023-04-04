@@ -37,57 +37,87 @@ const AppRoutes = () => {
       <ScrollToTop />
 
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about-us/" element={<About title="About Us" />} />
-        <Route path="/process/" element={<Process title="Process" />} />
-        <Route path="/gallery/" element={<Gallery title="Gallery" />} />
+        <Route exact path="/" element={<Home />} />
+        <Route exact path="/about-us/" element={<About title="About Us" />} />
+        <Route exact path="/process/" element={<Process title="Process" />} />
+        <Route exact path="/gallery/" element={<Gallery title="Gallery" />} />
 
         {/* study in abroad routes */}
         <Route
+          exact
           path="/study-in/countries/canada/"
           element={<CountryCanada title="Study in Canada" />}
         />
         <Route
+          exact
           path="/study-in/countries/australia/"
           element={<CountryAustralia title="Study in Australia" />}
         />
         <Route
+          exact
           path="/study-in/countries/usa/"
           element={<CountryUsa title="Study in USA" />}
         />
         <Route
+          exact
           path="/study-in/countries/uk/"
           element={<CountryUk title="Study in UK" />}
         />
         <Route
+          exact
           path="/study-in/countries/new-zealand/"
           element={<CountryNewZealand title="Study in New Zealand" />}
         />
         <Route
+          exact
           path="/study-in/countries/japan/"
           element={<CountryJapan title="Study in Japan" />}
         />
         <Route
+          exact
           path="/study-in/countries/korea/"
           element={<CountryKorea title="Study in Korea" />}
         />
 
         {/* course routes */}
         <Route
+          exact
           path="/courses/ielts/"
           element={<CoursesIelts title="Ielts" />}
         />
-        <Route path="/courses/pte-a/" element={<CoursesPte title="PTE-A" />} />
-        <Route path="/courses/sat/" element={<CoursesSat title="SAT" />} />
-        <Route path="/courses/ged/" element={<CoursesGed title="GED" />} />
         <Route
+          exact
+          path="/courses/pte-a/"
+          element={<CoursesPte title="PTE-A" />}
+        />
+        <Route
+          exact
+          path="/courses/sat/"
+          element={<CoursesSat title="SAT" />}
+        />
+        <Route
+          exact
+          path="/courses/ged/"
+          element={<CoursesGed title="GED" />}
+        />
+        <Route
+          exact
           path="/courses/toefl/"
           element={<CoursesToefl title="TOEFL" />}
         />
 
-        <Route path="/contact-us/" element={<ContactUs title="Contact Us" />} />
+        <Route
+          exact
+          path="/contact-us/"
+          element={<ContactUs title="Contact Us" />}
+        />
 
-        <Route path="/404" element={<PageNotFound />} title="Page Not Found" />
+        <Route
+          exact
+          path="/404"
+          element={<PageNotFound />}
+          title="Page Not Found"
+        />
         <Route
           path="*"
           element={<Navigate replace to="/404" title="Page Not Found" />}
